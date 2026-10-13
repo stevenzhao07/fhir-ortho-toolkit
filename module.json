@@ -1,0 +1,42 @@
+{
+  "id": "fhir-ortho-toolkit",
+  "title": "医疗器械 UDI 的 HL7 FHIR R4 轮廓（骨科植入物示例）",
+  "description": "骨科植入物唯一标识（UDI）的 HL7 FHIR R4 轮廓参考实现：Device（含 UDI carrier）、Patient、Procedure（THA/TKA）、Observation 的资源构造器与示例。定位为规范（spec）仓，投 HL7 社区。",
+  "triggers": {
+    "keywords": [
+      "fhir",
+      "ortho",
+      "udi",
+      "hl7",
+      "device",
+      "骨科",
+      "互操作"
+    ],
+    "file_patterns": [
+      "fhir_ortho.py"
+    ],
+    "intents": [
+      "FHIR轮廓",
+      "骨科UDI",
+      "互操作"
+    ]
+  },
+  "provides": [
+    "fhir-ortho-toolkit",
+    "fhir",
+    "udi",
+    "ortho-profile"
+  ],
+  "skills": [],
+  "needs_backends": [],
+  "license": "CC0",
+  "upstream": "HL7 community / chat.fhir.org",
+  "cost": "low",
+  "lazy": true,
+  "nested": true,
+  "entry": "scripts/fhir_ortho.py",
+  "deps": [],
+  "generated_by": "lgd-skeleton/1.0 (manual port from rea scaffold)",
+  "idea": "骨科植入物 UDI 的 FHIR R4 轮廓（Device/Patient/Procedure/Observation）",
+  "extension_note": "新增轮廓：在 `BUILDERS` 注册表加一个资源构造器即可。"
+}
